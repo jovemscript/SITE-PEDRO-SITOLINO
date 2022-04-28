@@ -1,0 +1,244 @@
+@font-face {
+    font-family: gt-l;
+    src: url(/fontes/GothamLight.ttf);
+}
+@font-face {
+    font-family: gt-m;
+    src: url(/fontes/GothamMedium.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px ;
+}
+
+
+body{
+    background-image: url(/imagens/background-img-tela-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.815);
+    padding: 20px;
+    width: 60vh;
+    height: 100vh;
+}
+
+
+
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space between;
+    margin-bottom: -41vh;
+
+}
+
+.stroke{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav ul li a {
+    display: block;
+    padding: 0 0px;
+    text-decoration: none;
+    color: rgb(84, 198, 255);
+  
+}
+/* nao mecher */
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 66, 97);
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(59, 106, 123);
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+#menu li{
+    list-style: none;
+    margin: 8.6vh;
+  
+}
+
+li{
+    font-family: gt-l;
+font-size: 3.5vh;
+color: rgb(75, 135, 156);
+font-weight: bold;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* link que ainda não foi acessado */
+a {
+    color: rgb(59, 106, 123);;
+ }
+ /* link que foi visitado */
+ a:visited {
+     color: rgb(59, 106, 123);
+ }
+
+ /* quando o link for selecionado */
+ a:active {
+     color: rgb(59, 106, 123);
+ }
+
+.texto{
+    float: left;
+}
+p{
+    font-family: gt-l;
+    font-size: 2.2vh;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    margin-left: 66.4vh;
+    line-height: 3.5vh;
+    font-weight: bold;
+    float:left;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(1, 50, 64, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 100vh;   
+    padding: 6vh; 
+    padding-left: 40vh;
+    padding-right: 34.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones{
+    margin-top: 5vh;
+    margin-left: -2vh;
+    
+}
+
+.icones img{
+    width:6vh;
+    margin: 1vh;
+
+}
+
+
+@media (max-width: 1024px) {
+    body{
+        background-image: url(/imagens/background-img-tela-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+    p{
+        font-family: gt-l;
+        font-size:3.4vh;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        margin-left: 0vh;
+        line-height: 4vh;
+        font-weight: bold;
+        float:left;
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(1, 50, 64, 0);
+        border: 1px solid rgba(255, 255, 255, 0);
+        width: 160vh; 
+        margin-bottom: 5vh; 
+        margin-top: -6vh; 
+        margin-left: 65vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    nav {
+        background: rgba(255, 255, 255, 0.815);
+        padding: 5vh;
+        width: 60vh;
+        height: 110vh;
+        
+    }
+
+    li{
+        font-family: gt-l;
+    font-size: 4.5vh;
+    color: rgb(75, 135, 156);
+    font-weight: bold;
+    
+    }
+    .icones{
+        margin-top: 5vh;
+        margin-left: -10vh;
+        
+    }
+    
+    .icones img{
+        width:7vh;
+        margin: 1vh;
+    
+    }
+    nav {
+        background: rgba(255, 255, 255, 0.815);
+        padding: 60px;
+        width: 60vh;
+        height: 130vh;
+    }
+    
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space between;
+    margin-bottom: -41vh;
+   background-size: cover;
+
+}
+#menu{
+    list-style: none;
+    margin: 15.6vh;
+    
+  
+}
+
+
+}
