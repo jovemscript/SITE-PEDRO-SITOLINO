@@ -1,10 +1,10 @@
 @font-face {
     font-family: gt-l;
-    src: url(/fontes/GothamLight.ttf);
+    src: url(../fontes/GothamLight.ttf);
 }
 @font-face {
     font-family: gt-m;
-    src: url(/fontes/GothamMedium.ttf);
+    src: url(../fontes/GothamMedium.ttf);
 }
 
 *{
@@ -14,7 +14,7 @@
 
 
 body{
-    background-image: url(/imagens/background-img-tela-2.png);
+    background-image: url(../imagens/background-img-tela-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

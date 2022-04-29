@@ -1,11 +1,11 @@
 @font-face {
     font-family: gm;
-    src: url(/fontes/GothamLight.ttf);
+    src: url(../fontes/GothamLight.ttf);
 }
 
 @font-face {
     font-family: text-box;
-    src: url(/fontes/Inter-Regular.ttf);
+    src: url(../fontes/Inter-Regular.ttf);
 }
 
 body {

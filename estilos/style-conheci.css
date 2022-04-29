@@ -1,11 +1,11 @@
 @font-face {
     font-family: gm;
-    src: url(/fontes/GothamLight.ttf);
+    src: url(../fontes/GothamLight.ttf);
 }
 
 @font-face {
     font-family: text-box;
-    src: url(/fontes/Inter-Regular.ttf);
+    src: url(../fontes/Inter-Regular.ttf);
 }
 
 body{
@@ -135,55 +135,166 @@ P{
     border-radius: 3vh;
 }
 
-.habilidades{
-    font-family: text-box;
-    text-align: center;
-    color: black;
-    padding: 2vh;
-    background-color: rgba(212, 212, 212, 0.466);
-    width: 170vh;
-    border-radius: 3vh;
-}
 
 
-.habilidades img{
-padding: 8vh;
+h1 {
+
+
+  margin: 0;
 
 }
 
-.habilidades img:hover {
+
+/* C */
+/* ========================================================================== */
+.c {
+  min-width: 50px;
+  width: 100vh;
+  height: 60vh;
+  border-radius: 12px;
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+  margin-left: 60vh;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  
+
+  position: relative;
+  overflow: hidden;
+  background: hsl(0 0% 90%);
+
+  box-sizing: border-box;
+}
+
+.ci {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: inherit;
+  height: inherit;
+  transform-origin: left 50%;
+
+  background: inherit;
+
+  z-index: var(--z);
+  transition: .3s ease-out;
+}
+
+.ci img {
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.ch {
+  position: absolute;
+  top: 70%;
+  left: 4%;
+  transform: translateY(-50%);
+
+  font-size: 2rem;
+  color: hsla(var(--h) var(--s) var(--l) / .8);
+  text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+}
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+}
+
+label {
+  width: 10%;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 20px;
+
+  background: hsla(0 0% 90% / .3);
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+}
+
+label:last-child {
+  margin-right: 0;
+}
+
+input:checked+label {
+  background: linear-gradient(to right,
+    hsla(var(--hue) 80% 70% / .7),
+    hsla(calc(var(--hue) + 30) 80% 50% / .7));
+}
+
+input:not(:checked)+label+.ci {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+input:checked+label+.ci~.ci {
+  transform: translateX(100%);
+}
+
+input:not(:checked)+label+.ci {
+  transition: 0;
+}
+
+
+/* ABS */
+/* ========================================================================== */
+.abs-site-link {
+  position: fixed;
+  z-index: 11;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(32 50% 50% / .8);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 3px solid currentColor;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.abs-profiles {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 23px;
+  opacity: .8;
+}
+
+.abs-profiles img {
+  filter: hue-rotate(71deg) brightness(1.1);
+}
+
+.abs-profiles a {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+
+
         
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 1.9s;
-  
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(2px, 2px) rotate(0deg); }
-    10% { transform: translate(-2px, -3px) rotate(-1deg); }
-    20% { transform: translate(-4px, 0px) rotate(1deg); }
-    30% { transform: translate(4px, 4px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 4px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(4px, 1px) rotate(-1deg); }
-    80% { transform: translate(-2px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(4px, -2px) rotate(-1deg); }
-  }
+
+
+ 
 
 footer {
     width: 100%;
     background: rgba(228, 228, 228, 0.788) ;
     color: #fff;
-    margin-top: 6%;
     padding:5vh;
-    align-items: center;
     justify-content: left;
-    display: flex;
     padding-left: 14vh;
+    margin: auto;
+width: 100%;
+bottom: 0;
+position: fixed;
 }
 footer img {
     margin-right: 3vh;
