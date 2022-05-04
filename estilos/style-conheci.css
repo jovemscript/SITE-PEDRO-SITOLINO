@@ -31,6 +31,10 @@ body{
 
 /*menu e cabeçalho*/
 
+header {
+  margin-top: 8vh;
+}
+
 /*nav*/
 
 small {
@@ -49,6 +53,7 @@ nav {
     background: #fff;
     padding: 0;
     font-family: gm;
+    
 }
 
 nav ul {
