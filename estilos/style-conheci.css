@@ -100,7 +100,9 @@ nav ul li a:hover {
 nav.stroke ul li a,
 nav.fill ul li a {
     position: relative;
-display: inline-block;    
+display: inline-block; 
+font-weight: bold
+
 }
 
 nav.stroke ul li a:after,
