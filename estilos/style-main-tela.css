@@ -13,7 +13,6 @@
     margin: 0px;
 }
 
-
 body {
     background-image: url(../imagens/background-img-tela-2.png);
     background-size: cover;
@@ -164,18 +163,10 @@ p {
 }
 
 
-@media (max-width: 1024px) {
-    body {
-        background-position: 70% 300%;
-        background-size: cover;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
+@media (max-width:375px) {
     body {
         background-image: url(/imagens/background-img-mobile.png);
-        overflow-y: hidden;
+        overflow-y: auto;
 
     }
 
@@ -187,24 +178,29 @@ p {
         margin-top: 10vh;
     }
 
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space between;
+        margin-bottom: -30vh !important;
+    
+    }
+    
+
     #menu {
-        margin-bottom: 10vh;
-        margin-left: 15vh;
+        margin-top: 0px;
+        margin-bottom: 1vh;
+        margin-left: -20vh !important;
+        
     }
 
     #menu li {
         font-family: gt-m;
         list-style: none;
         font-size: 2vh;
+        margin: 2vh;
 
 
-    }
-
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: -15vh;
     }
 
     li {
@@ -224,8 +220,120 @@ p {
     }
 
     .icones {
-        margin-top: 62vh !important;
-        margin-left: 0vh;
+        margin-top: 54vh !important;
+        margin-left: 3vh;
+    }
+
+    .icones img {
+        background-color: rgba(240, 248, 255, 0.733);
+        padding: 1vh;
+        border-radius: 1vh;
+        width: 3vh;
+        margin: 1vh;
+        margin-bottom: 5vh;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .texto {
+        margin-bottom: 13vh ;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 70vh !important;
+        margin-left: 0vh !important;
+
+    }
+
+    .icones {
+        margin-right: 5vh;
+
+    }
+
+    p {
+        font-family: gt-l;
+        font-size: 1.5vh !important;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        margin-left: 3vh;
+        line-height: 2.5vh;
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(1, 50, 64, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        border-radius: 15px;
+        width: 50%;
+        padding: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10vh;
+    }
+
+}
+
+@media (max-width:768px) {
+    body {
+        background-image: url(/imagens/background-img-mobile.png);
+        overflow-y: auto;
+
+    }
+
+    nav {
+        background: rgba(255, 255, 255, 0);
+        padding: 20px;
+        width: 42vh;
+        height: 70vh;
+        margin-top: 10vh;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space between;
+        margin-bottom: -30vh !important;
+    
+    }
+    
+
+    #menu {
+        margin-top: 38px;
+        margin-bottom: 1vh;
+        margin-left: -45vh;
+        
+    }
+
+    #menu li {
+        font-family: gt-m;
+        list-style: none;
+        font-size: 2vh;
+        margin: 2vh;
+
+
+    }
+
+    li {
+        background-color: rgba(240, 248, 255, 0.733);
+        text-align: center;
+        padding: 1vh;
+        border-radius: 2vh;
+    }
+
+    .stroke {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        width: 85%;
+
+    }
+
+    .icones {
+        margin-top: 45vh !important;
+        margin-left: 3vh;
     }
 
     .icones img {
@@ -244,10 +352,11 @@ p {
 
     .texto {
         margin-bottom: 15vh;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 57vh !important;
+        align-items: right;
+        align-content: right;
+        justify-content: right;
+        width: 90vh;
+    margin-left: 20vh;
     }
 
     .icones {
@@ -257,11 +366,11 @@ p {
 
     p {
         font-family: gt-l;
-        font-size: 1vh;
+        font-size: 1.8vh;
         text-align: justify;
         color: rgb(255, 255, 255);
         margin-left: 3vh;
-        line-height: 3.5vh;
+        line-height: 2.8vh;
         backdrop-filter: blur(0px) saturate(200%);
         -webkit-backdrop-filter: blur(0px) saturate(200%);
         background-color: rgba(1, 50, 64, 0.55);
@@ -275,155 +384,4 @@ p {
         margin-top: -10vh;
     }
 
-
-}
-
-@media screen and (max-width: 375px) {
-    body {
-        background-size: cover;
-        overflow-x: hidden;
-    }
-
-    #menu {
-        margin-left: 15vh;
-        margin-right: -5vh;
-        margin-bottom: 10vh;
-    }
-
-    .texto {
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 70vh;
-    }
-
-    .icones {
-        margin-top: 52vh !important;
-    }
-
-    .icones img {
-        margin-top: 205vh;
-    }
-
-    p {
-        font-family: gt-l;
-        font-size: 2vh;
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        margin-left: 3vh;
-        line-height: 3.5vh;
-        backdrop-filter: blur(0px) saturate(200%);
-        -webkit-backdrop-filter: blur(0px) saturate(200%);
-        background-color: rgba(1, 50, 64, 0.55);
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        border-radius: 15px;
-        width: 0%;
-        padding: 2vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0vh;
-    }
-
-
-
-}
-
-@media screen and (max-width: 425px) {
-    body {
-        background-image: url(/imagens/background-img-mobile.png);
-        background-size: cover;
-        height: 100%;
-        overflow: auto;
-        overflow-x: hidden;
-
-    }
-
-    nav {
-        background: rgba(255, 255, 255, 0);
-        padding: 20px;
-        width: 42vh;
-        height: 70vh;
-        margin-top: 10vh;
-        margin-left: 8vh;
-    }
-
-    #menu {
-        margin-left: -40vh;
-    }
-
-    #menu li {
-        list-style: none;
-        margin: 2vh;
-        margin-left: -4vh;
-        font-size: 2.5vh;
-        font-family: gt-m;
-
-
-    }
-
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: -30vh;
-        margin-left: 0vh;
-
-    }
-
-    li {
-        background-color: rgba(240, 248, 255, 0.733);
-        text-align: center;
-        padding: 1vh;
-        border-radius: 2vh;
-    }
-
-    .stroke {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        width: 70%;
-    }
-
-    .icones {
-        margin-top: 62vh !important;
-    }
-
-    .icones img {
-        background-color: rgba(240, 248, 255, 0.733);
-        padding: 1vh;
-        border-radius: 1vh;
-        width: 3vh;
-        margin: 1vh;
-        margin-top: -10vh;
-        margin-bottom: 15vh;
-        display: inline;
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    p {
-        font-family: gt-l;
-        font-size: 2vh;
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        margin-left: 3vh;
-        line-height: 3.5vh;
-        backdrop-filter: blur(0px) saturate(200%);
-        -webkit-backdrop-filter: blur(0px) saturate(200%);
-        background-color: rgba(1, 50, 64, 0.55);
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        border-radius: 15px;
-        width: 86%;
-        padding: 2vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: -10vh;
-    }
 }
