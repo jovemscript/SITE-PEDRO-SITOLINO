@@ -29,12 +29,6 @@ body{
     border-radius: 30px;
 }
 
-/*menu e cabeçalho*/
-
-header {
-  margin-top: 8vh;
-}
-
 /*nav*/
 
 small {
@@ -46,26 +40,24 @@ small {
 .center {
     text-align: center;
 }
-
+header{
+  margin-top: 8vh;
+}
 nav {
     width: 100%;
     margin: 0 auto;
     background: #fff;
     padding: 0;
     font-family: gm;
-    
 }
 
 nav ul {
     list-style: none;
     text-align: center;
-   
 }
 
 nav h1 {
-    margin-right: 320px;
-    margin-left: -50px;
-    padding-bottom: 4vh;
+    margin-right: 40vh;
     color: rgb(0, 66, 90);
     font-size: 35px;
 }
@@ -74,13 +66,13 @@ nav ul li {
     display: inline-block;
     padding: 5px;
 }
-nav li{
-    margin:5px ;
-    font-size: 0.8 em;
 
-
+nav li {
+    margin: 5px;
+    font-size: 0.8;
 }
-nav ul  a {
+
+nav ul a {
     display: inline-block;
     text-decoration: none;
     color: rgb(78, 133, 153);
@@ -100,8 +92,8 @@ nav ul li a:hover {
 nav.stroke ul li a,
 nav.fill ul li a {
     position: relative;
-display: inline-block; 
-font-weight: bold
+    display: inline-block;
+    font-weight: bold
 
 }
 
@@ -124,9 +116,10 @@ nav.stroke ul li a:hover:after {
 }
 
 .icons {
-  height: 20px;
+    height: 20px;
 }
-.Arrow-voltar{
+
+.Arrow-voltar {
     margin-bottom: -1vh;
 }
 
@@ -170,14 +163,14 @@ h2{
   border-radius: 12px;
   padding-bottom: 20px;
   padding: 5vh;
-  margin-left: 10vh;
+  margin-left: 10%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   position: relative;
   overflow: hidden;
   background: hsl(0 0% 90%);
-
+  margin-top:5%;
   box-sizing: border-box;
 }
 
@@ -282,28 +275,96 @@ input:not(:checked)+label+.ci {
   display: inline-block;
   margin-left: 6px;
 }
-
-
-
-        
-
-
  
-
 footer {
-  width: 100%;
-  background: rgba(228, 228, 228, 0.788) ;
+  width: 92%;
+  background: rgba(228, 228, 228, 0.788);
   color: #fff;
-  margin-top: 4%;
-  padding:5vh;
+  margin-top: 6%;
+  padding: 5vh;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   display: flex;
   padding-left: 14vh;
 }
+
 footer img {
   margin-right: 3vh;
   width: 4vh;
+  margin-left: 6vh;
+  align-items: center;
+  align-content: center;
 
+}
+
+@media (max-width:425px) {
+  .c {
+    min-width: 50px;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    padding: 5vh;
+    margin-left: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: hsl(0 0% 90%);
+    margin-top:5%;
+    box-sizing: border-box;
+  }
+  
+  .ci {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    transform-origin: left 50%;
+    background: inherit;
+    background: rgba(228, 228, 228, 0.788) ;
+  
+    z-index: var(--z);
+    transition: .3s ease-out;
+  }
+  
+  .ci img {
+    -moz-user-select: none;
+    user-select: none;
+    width: 130%;
+    margin-left: -10vh;
+  }
+  
+  .ch {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: hsla(var(--h) var(--s) var(--l) / .8);
+    text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+  }
+
+  footer {
+    width: 92%;
+    background: rgba(228, 228, 228, 0.788);
+    color: #fff;
+    padding: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 2.5vh;
+}
+
+footer img {
+    margin-right: 3vh;
+    width: 4vh;
+    margin-left: 0vh;
+    align-items: center;
+    align-content: center;
+
+}
 
 }
