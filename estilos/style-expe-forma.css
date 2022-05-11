@@ -93,7 +93,6 @@ nav.fill ul li a {
     position: relative;
     display: inline-block;
     font-weight: bold
-
 }
 
 nav.stroke ul li a:after,
@@ -130,6 +129,7 @@ main {
     text-align: center;
 
 }
+
 
 #primario {
     float: left;
@@ -280,50 +280,73 @@ footer img {
 
 @media (max-width:475px) {
 
-    
+
     main {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 0vh;
         justify-content: center;
         text-align: center;
-    
+
     }
-    
+
+    header {
+        margin-right: 5vh;
+    }
+
+    header li h1 {
+        margin-right: 0vh;
+        font-size: 4vh;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: left;
+    }
+
     #primario {
         float: center;
-        margin-left: 10vh;
+        margin-left: 6vh;
         color: #fff;
     }
-    
+
+    #secundario {
+        float: center;
+        margin-left: 5.5vh;
+        color: #fff;
+        margin-top: -3vh;
+        margin-bottom: 0vh;
+    }
+
+
     .form-box {
         width: 100%;
         margin-left: -6vh;
     }
-    
+
     .form-box p {
         align-items: left;
         margin-left: 12vh;
-    
+
     }
-    
- .titulo-f {
+
+    .titulo-f {
         font-size: 1.8vh !important;
         color: black;
         font-family: text-box;
         text-align: left;
     }
-    
-.subtitulo-f {
+
+    .subtitulo-f {
         font-family: text-box;
         display: flex;
         font-weight: bold;
-        letter-spacing: 0.5vh;        
+        letter-spacing: 0.5vh;
         font-size: 1.5vh;
 
 
-    
+
     }
-    
+
     .form-box .local-f {
         font-size: 1.5vh;
         color: black;
@@ -332,23 +355,15 @@ footer img {
         padding-bottom: 6vh;
         border-bottom: 2px solid rgb(59, 106, 123);
     }
-    
-    #secundario {
-        float: center;
-        margin-left: 10vh;
-        margin-bottom: 4vh;
-        margin-top: -2vh;
 
-        color: #fff;
-    }
-    
+
     .titulo {
         font-size: 2.5vh;
         color: black;
         margin-left: 2vh;
         font-family: text-box;
     }
-    
+
     .subtitulo {
         font-size: 1.6vh;
         letter-spacing: 0.45vh;
@@ -359,43 +374,42 @@ footer img {
         display: flex;
         font-weight: bold;
     }
-    
+
     .local {
         font-size: 1.5vh;
         color: black;
         margin-left: 2vh;
         font-family: text-box;
-    
+
     }
-    
-    
+
+
     .box {
         justify-content: left;
         text-align: left;
         border-radius: 20px;
         width: 80%;
         height: 20vh;
-        margin: 2vh 0;
         padding: 5px;
         color: #fff;
         background: #25607641;
     }
-    
+
     .box:hover {
         justify-content: left;
         text-align: left;
         border-radius: 20px;
         width: 80%;
         height: 20vh;
-        margin: 2vh 0;
+
         padding: 5px;
         color: #fff;
         box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.123);
-    
+
     }
-    
-    
-    
+
+
+
     .box1 {
         display: flex;
         justify-content: center;
@@ -406,9 +420,9 @@ footer img {
         padding: 5px;
         color: black;
         border-bottom: 2px solid rgb(215, 244, 255);
-    
+
     }
-    
+
     .box2 {
         display: flex;
         justify-content: center;
@@ -419,7 +433,7 @@ footer img {
         padding: 5px;
         color: black;
     }
-    
+
     footer {
         width: 92%;
         background: rgba(228, 228, 228, 0.788);
@@ -430,14 +444,13 @@ footer img {
         display: flex;
         padding-left: 2.5vh;
     }
-    
+
     footer img {
         margin-right: 3vh;
         width: 4vh;
         margin-left: 0vh;
         align-items: center;
         align-content: center;
-    
+
     }
 }
-
