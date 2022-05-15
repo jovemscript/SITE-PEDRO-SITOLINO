@@ -47,7 +47,7 @@ header {
 
 nav {
   width: 100%;
-  margin: 0 auto;
+  margin-top: -2vh;
   background: #fff;
   padding: 0;
   font-family: gm;
@@ -61,7 +61,7 @@ nav ul {
 nav h1 {
   margin-right: 40vh;
   color: rgb(0, 66, 90);
-  font-size: 35px;
+  font-size: 5vh;
 }
 
 nav ul li {
@@ -320,7 +320,7 @@ header {
     margin-right: 5vh;
 }
 
-header li h1 {
+.stroke li h1 {
     margin-right: 0vh;
     font-size: 4vh;
     margin-top: -2vh;
@@ -339,7 +339,7 @@ nav ul {
   header li h1 {
     margin-right: 20vh;
     font-size: 4vh;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
   }
 
   .c {

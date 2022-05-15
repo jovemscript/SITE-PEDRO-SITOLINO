@@ -58,7 +58,7 @@ nav ul {
 nav h1 {
     margin-right: 40vh;
     color: rgb(0, 66, 90);
-    font-size: 35px;
+    font-size: 5vh;
 }
 
 nav ul li {
@@ -131,12 +131,6 @@ main {
 }
 
 
-#primario {
-    float: left;
-    margin-left: 10vh;
-    color: #fff;
-}
-
 .form-box {
     width: 130vh;
 }
@@ -171,11 +165,23 @@ main {
     border-bottom: 2px solid rgb(59, 106, 123);
 }
 
+#primario {
+
+        float: left;
+        margin-left: 25vh;
+        color: #fff;
+        margin-bottom: 15vh;
+        margin-top: -3vh;
+
+}
 #secundario {
-    float: left;
-    margin: 0 0 0 100px;
-    color: #fff;
-    margin-bottom: 15vh;
+
+        float: left;
+        margin-left: 15vh;
+        color: #fff;
+        margin-bottom: 15vh;
+        margin-top: -3vh;
+
 }
 
 .titulo {
@@ -209,8 +215,8 @@ main {
     justify-content: left;
     text-align: left;
     border-radius: 20px;
-    width: 518px;
-    height: 125px;
+    width: 75vh;
+    height: 23vh;
     margin: 3vh 0;
     padding: 5px;
     color: #fff;
@@ -221,8 +227,8 @@ main {
     justify-content: left;
     text-align: left;
     border-radius: 20px;
-    width: 518px;
-    height: 125px;
+    width: 75vh;
+    height: 23vh;
     margin: 3vh 0;
     padding: 5px;
     color: #fff;
@@ -277,9 +283,66 @@ footer img {
     align-content: center;
 
 }
+@media (max-width:1024px) {
+    #primario {
+        float: center;
+        margin-left: 6vh;
+        color: #fff;
+        margin-bottom: 0.5vh;
+        width: 8vh;
+    }
+
+    #secundario {
+        float: center;
+        margin-left: 75vh;
+        color: #fff;
+        margin-top: -3vh;
+        margin-bottom: 0vh;
+        width: 8vh;
+    }
+}
 
 @media (max-width:475px) {
 
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        margin-top: 25px;
+        margin-left: 0vh;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    header {
+        margin-right: 5vh;
+    }
+    
+    .stroke li h1 {
+        margin-right: 0vh;
+        font-size: 4vh;
+        margin-top: 1.5vh;
+        margin-bottom: 1vh;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-align: left;
+    }
+    
+      nav ul {
+        list-style: none;
+        text-align: left;
+      }
+    
+      header li h1 {
+        margin-right: 20vh;
+        font-size: 4vh;
+        padding-bottom: 1vh;
+      }
+    
 
     main {
         margin-top: 30px;
@@ -307,14 +370,17 @@ footer img {
         float: center;
         margin-left: 6vh;
         color: #fff;
+        margin-bottom: 0.5vh;
+        width: 90%;
+
     }
 
     #secundario {
         float: center;
-        margin-left: 5.5vh;
+        margin-left: 6vh;
         color: #fff;
         margin-top: -3vh;
-        margin-bottom: 0vh;
+        width: 90%;
     }
 
 
