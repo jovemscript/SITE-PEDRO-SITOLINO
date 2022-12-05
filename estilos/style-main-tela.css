@@ -14,20 +14,18 @@
 }
 
 body {
-    background-image: url(../imagens/background-img-tela-2.png);
-    background-size: cover;
+    background-image: url(../imagens/background-img-tela-1.png);
+    background-size: 125vw;
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
 }
 
 nav {
     background: rgba(255, 255, 255, 0.815);
-    padding: 20px;
-    width: 60vh;
-    height: 100vh;
+    margin: 5vw ;
+    padding: 8vw;
+    width: 35vw;
 }
 
 .menu-icon {
@@ -125,32 +123,6 @@ a:active {
     color: rgb(59, 106, 123);
 }
 
-.texto {
-    float: left;
-}
-
-p {
-    font-family: gt-p;
-    font-size: 2.2vh;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-    margin-left: 66.4vh;
-    line-height: 3.5vh;
-    font-weight: bold;
-    float: left;
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(0px) saturate(200%);
-    background-color: rgba(1, 50, 64, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    width: 100vh;
-    padding: 6vh;
-    padding-left: 40vh;
-    padding-right: 34.5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 .icones {
     margin-top: 5vh;
@@ -165,9 +137,12 @@ p {
 }
 
 
-@media (max-width:425px) {
+@media (max-width:530px) {
     body {
         background-image: url(/imagens/background-img-mobile.png);
+        background-size: 125vw;
+        background-repeat: no-repeat;
+        width: 100%;
         overflow: hidden;
 
     }
@@ -238,34 +213,6 @@ p {
         align-items: center;
 
 
-    }
-
-    .texto {
-        margin-bottom: 10vh;
-        margin-left: 0vh !important;
-
-    }
-
-
-
-    p {
-        font-family: gt-p;
-        font-size: 1.5vh !important;
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        margin-left: 3vh;
-        line-height: 2.5vh;
-        backdrop-filter: blur(0px) saturate(200%);
-        -webkit-backdrop-filter: blur(0px) saturate(200%);
-        background-color: rgba(1, 50, 64, 0.55);
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        border-radius: 15px;
-        width: 82%;
-        padding: 2vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -16vh;
     }
 
 }
